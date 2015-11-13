@@ -7,15 +7,9 @@ class App extends Component {
 
     this.state = {
       items: [
-        {
-          name: "Bread",
-        },
-        {
-          name: "Butterfly",
-        },
-        {
-          name: "Milk"
-        }
+        { name: "Bread" },
+        { name: "Butterfly" },
+        { name: "Milk" }
       ],
       aha: false,
     };
