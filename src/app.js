@@ -10,21 +10,19 @@ class App extends Component {
         { name: "Bread" },
         { name: "Butterfly" },
         { name: "Milk" }
-      ],
-      aha: false,
+      ]
     };
   }
 
   handleClick() {
-    this.setState({aha: true})
+    let { items } = this.state;
+    // items = items.slice(); // Unless we clone a new items array.
+    items[0].name = "Cookie";
+    this.setState({items: items})
   }
 
   render() {
-    let { items, aha } = this.state;
-    if (aha) {
-      // items = items.slice(); // Unless we clone a new items array.
-      items[0].name = "Cookie";
-    }
+    const { items } = this.state;
 
     return (
       <div>
