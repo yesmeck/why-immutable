@@ -17,7 +17,7 @@ class App extends Component {
   handleClick() {
     let { items } = this.state;
     // items = items.slice(); // Unless we clone a new items array.
-    items[0].name = "Cookie";
+    items.shift();
     this.setState({items: items})
   }
 
