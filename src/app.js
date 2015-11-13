@@ -6,11 +6,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      items: [
-        { name: "Bread" },
-        { name: "Butterfly" },
-        { name: "Milk" }
-      ]
+      items: [ "Bread", "Butterfly", "Milk" ]
     };
   }
 
@@ -47,7 +43,7 @@ class ShoppingList extends Component {
       <ul>
         {
           (items.map((item, index) => (
-            <li key={index}>{item.name}</li>
+            <li key={index}>{item}</li>
           )))
         }
       </ul>
